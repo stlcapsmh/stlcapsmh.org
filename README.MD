@@ -1,5 +1,9 @@
 # STL CAPS Medical and Healthcare Program Website
 
+[![Build Status](
+        https://travis-ci.org/stlcapsmh/stlcapsmh.org.svg?branch=master)](
+        https://travis-ci.org/stlcapsmh/stlcapsmh.org)
+
 The St. Louis Centers for Advanced Professional Studies Medical and Healthcare
 program is a division of the Affton School District's STL CAPS program and
 provides junior and senior high school students the opportunity to test-drive
