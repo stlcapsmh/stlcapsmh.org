@@ -1,0 +1,84 @@
+/* Navigation Bar */
+.navbar-top .navbar-toggle .icon-bar {
+	background-color: #0F6EB9;
+}
+
+.navbar-custom {
+	height: 70px;
+	font-size: 14px;
+	background-color: #0F6EB9;
+}
+
+#logo {
+	float: left;
+	margin-top: 5px;
+}
+
+.navbar-custom .navbar-nav > li > a {
+	border-radius: 0px; /* Override Bootstrap */
+	background-color:  #0F6EB9;
+	color: white;
+	height: 70px;
+	padding-top: 27px;
+	padding-right: 17px;
+	padding-left: 17px;
+}
+
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > li > a:hover {
+	color: #0F6EB9;
+	background-color: #D2DFE8;
+	height: 70px;
+}
+
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > li > a:focus {
+	color: #0F6EB9;
+	background-color: #D2DFE8;
+	height: 70px;
+}
+
+.custom-brand {
+	color: white;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 20px;
+	font-weight: 100;
+	margin-top: 2px;
+}
+
+.custom-brand p {
+	font-size: 14px;
+}
+
+.navbar-toggle {
+	border: 2px solid white;
+	margin-top: 14px;
+}
+
+.icon-bar {
+	background-color: white;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.custom-brand {
+		display: none;
+	}
+	.navbar-collapse.in {
+		max-height: none;
+	}
+	.navbar-nav {
+		margin-top: 0px;
+		max-height: none;
+	}
+}
+
+@media (max-width: 1185px) {
+	.custom-brand {
+		display: none;
+	}
+	.navbar-collapse.in {
+		max-height: none;
+	}
+	.navbar-nav {
+		margin-top: 0px;
+		max-height: none;
+	}
+}
