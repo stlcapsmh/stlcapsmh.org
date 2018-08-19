@@ -1,0 +1,26 @@
+{% extends "core/index.html" %}
+{% block content %}
+<link href="{{ url_for('static', filename='style/pages/about.css') }}"
+rel="stylesheet"/>
+<div class="about">
+  <div class="page-header">
+    <h1 id="header">About <small>STL CAPS Medical and Healthcare</small></h1>
+  </div>
+  <div class="about-content">
+    <img src="{{ url_for('static', filename='img/about.png') }}"
+         alt="Class Demonstration Picture"
+         class="custom-thumbnail"/>
+    <div class="about-text">
+      <p>{{ page['about_content'] }}</p>
+      <br><br>
+      <a href="http://stlcaps.yourcapsnetwork.org/"  id="button"
+         class="btn btn-primary" role="button">Visit STL CAPS Website</a>
+    </div>
+    <br><br><br>
+    <img id="brdg-img" src="{{ url_for('static', filename='img/brdg.jpg') }}"
+         alt="Class Demonstration Picture" class="custom-thumbnail"/>
+    <img id="top-img" src="{{ url_for('static', filename='img/pltw.jpg') }}"
+         alt="Class Demonstration Picture" class="custom-thumbnail"/>
+  </div>
+</div>
+{% endblock %}

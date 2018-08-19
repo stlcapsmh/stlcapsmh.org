@@ -1,0 +1,85 @@
+body {
+	background-color: #0F6EB9;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#header {
+	/* color */
+	color: #0F6EB9;
+
+	/* Display and Box Model */
+	margin-left: 15px;
+
+	/* Text */
+	font-size: 48px;
+	font-weight: 500;
+}
+
+#header small {
+	color: rgba(243,109,12, 1);
+}
+
+.about {
+	/* Color */
+	background-color: white;
+
+	/* Display and Position */
+	margin: 40px 0px 40px 0px;
+	padding: 5px 10px 10px 10px;
+}
+
+.about-content {
+	/* Color */
+	color: #0F6EB9;
+
+	/* Display and Box Model */
+	padding: 5px 0px 20px 0px;
+	text-align: center; /* Centering the inline block content. */
+	width: 100%;
+
+	/* Text */
+	font-size: 17px;
+}
+
+.about-text {
+	/* Display and Box Model */
+	display: inline-block;
+	margin: 0px 0px 0px 60px;
+	max-width: 60%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.about-text p {
+	margin: 0px; /* Override */
+	text-align: justify;
+}
+
+.custom-thumbnail {
+	border-radius: 2px;
+	height: auto;
+	margin-bottom: 10px;
+	max-width: 30%;
+}
+
+#brdg-img {
+	margin-right: 80px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 900px) {
+	#header {
+		font-size: 28px;
+	}
+	#header small {
+		display: block;
+		font-size: 20px;
+	}
+	.custom-thumbnail {
+		max-width: 80%;
+	}
+	.about-text {
+		margin: 5px 0px 0px 0px;
+		max-width: 90%;
+		padding: 0px;
+	}
+}
