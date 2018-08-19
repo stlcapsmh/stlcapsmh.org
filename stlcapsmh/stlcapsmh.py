@@ -48,6 +48,39 @@ PAGES = [
                        'division of the St. Louis Center for Advanced '
                        'Professional Studies.',
         'path': '/'
+    },
+    {
+        'name': 'ABOUT',
+        'title': 'ABOUT - STL CAPS Medical and Healthcare Program',
+        'description': 'This is the official website of the Affton School '
+                       'District\'s Biomedical Healthcare Program, a '
+                       'division of the St. Louis Center for Advanced '
+                       'Professional Studies.',
+        'path': '/about',
+        'about_content': 'The St. Louis Centers for Advanced Professional '
+                         'Studies is a division of the Affton School '
+                         'District, and provides junior and senior high '
+                         'school students the opportunity to test-drive '
+                         'their future in high-skill, high-demand careers '
+                         'while embedded in a professional workplace for a '
+                         'year-long experience. The Medical and '
+                         'Healthcare division of the STL CAPS program '
+                         'implements students in the hospital setting, '
+                         'providing real world experiences in the field of '
+                         'healthcare and medicine in and out of the '
+                         'classroom. In the classroom students build a '
+                         'vocabulary in anatomical language, investigate '
+                         'each human body system, learn proper physical '
+                         'assessment skills, develop treatment plans, and '
+                         'practice proper patient care.  The activities have '
+                         'been designed to improve student analysis and '
+                         'problem solving skills.  Students also learn from '
+                         'a diverse group of healthcare providers who visit '
+                         'the classroom as guest lecturers.  Outside the '
+                         'classroom numerous site visits to medical, '
+                         'healthcare, and biomedical facilities exposing '
+                         'students to a variety of professions and '
+                         'advancements.'
     }
 ]
 
@@ -55,8 +88,13 @@ PAGES = [
 @APP.route('/')
 def get_index():
     """Display the homepage."""
-    # TODO(@drewwalters96): There should be a safer way to get a page from the
-    #                       page tree.
     page = PAGES[0]
     return flask.render_template('core/index.html', core=CORE, pages=PAGES,
+                                 page=page)
+
+@APP.route('/about')
+def get_about():
+    """Display the about page."""
+    page = PAGES[1]
+    return flask.render_template('pages/about.html', core=CORE, pages=PAGES,
                                  page=page)
