@@ -92,6 +92,7 @@ def get_index():
     return flask.render_template('core/index.html', core=CORE, pages=PAGES,
                                  page=page)
 
+
 @APP.route('/about')
 def get_about():
     """Display the about page."""
