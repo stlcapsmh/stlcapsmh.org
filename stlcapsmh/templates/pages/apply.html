@@ -1,0 +1,22 @@
+{% extends "core/index.html" %}
+{% block content %}
+<link href="{{ url_for('static', filename='style/pages/apply.css') }}"
+    rel="stylesheet">
+<div class="apply">
+    <div class="page-header">
+        <h1 id="header">Apply <small>STL CAPS Medical and Healthcare</small></h1>
+    </div>
+    <div class="apply-content">
+        <img src="{{ url_for('static', filename='img/cns-2.jpg') }}"
+             id="image-box">
+        <img src="{{ url_for('static', filename='img/cns-3.jpg') }}"
+             id="image-box">
+        <div class="apply-text">
+            <p>{{ page['apply_content'] }}</p>
+            <p>Thank you for your interest in our program!</p>
+            <a class="btn btn-primary btn-md" id="apply-button" href="http://stlcaps.yourcapsnetwork.org/enrollment/" role="button">Apply Now!</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
