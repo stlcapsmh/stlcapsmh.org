@@ -1,0 +1,76 @@
+body {
+	background-color: #0F6EB9;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#header {
+	/* color */
+	color: #0F6EB9;
+
+	/* Display and Box Model */
+	margin-left: 15px;
+
+	/* Text */
+	font-size: 48px;
+	font-weight: 500;
+}
+
+#header small {
+	color: rgba(243,109,12, 1);
+}
+
+.apply {
+	/* Color */
+	background-color: white;
+
+	/* Display and Position */
+	margin: 40px 0px 40px 0px;
+	padding: 5px 10px 10px 10px;
+}
+
+.apply-content {
+	/* Color */
+	color: #0F6EB9;
+
+	/* Display and Box Model */
+	padding: 5px 0px 20px 0px;
+	text-align: center; /* Centering the inline block content. */
+	width: 100%;
+
+	/* Text */
+	font-size: 17px;
+}
+
+.apply-text {
+	/* Display and Box Model */
+	display: inline-block;
+	margin: 30px 0px 0px 40px;
+	max-width: 60%;
+	text-align: center;
+    vertical-align: middle;
+
+    /* Positioning */
+    vertical-align: middle;
+
+    /* Text */
+    font-size: 16px;
+}
+
+#apply-button {
+    margin-top: 10px;
+}
+
+#image-box {
+	border-radius: 2px;
+
+	/* Display and Box Model */
+	display: inline-block;
+	height: auto;
+	max-width: 40%;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	/* Positioning */
+	vertical-align: middle
+}
+

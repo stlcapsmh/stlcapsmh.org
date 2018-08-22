@@ -81,6 +81,21 @@ PAGES = [
                          'healthcare, and biomedical facilities exposing '
                          'students to a variety of professions and '
                          'advancements.'
+    },
+    {
+        'name': 'APPLY',
+        'title': 'APPLY - STL CAPS Medical and Healthcare',
+        'description': 'This is the official website of the Affton School '
+                       'District\'s Biomedical Healthcare Program, a '
+                       'division of the St. Louis Center for Advanced '
+                       'Professional Studies.',
+        'path': '/apply',
+        'apply_content': 'Applications for the St. Louis Centers for '
+                         'Advanced Professional Studies Medicare and '
+                         'Healthcare program are managed by the Affton '
+                         'School District. The application is available '
+                         'on the official CAPS website or by clicking '
+                         'the apply button below.'
     }
 ]
 
@@ -98,4 +113,12 @@ def get_about():
     """Display the about page."""
     page = PAGES[1]
     return flask.render_template('pages/about.html', core=CORE, pages=PAGES,
+                                 page=page)
+
+
+@APP.route('/apply')
+def get_apply():
+    """Display the apply page."""
+    page = PAGES[2]
+    return flask.render_template('pages/apply.html', core=CORE, pages=PAGES,
                                  page=page)
