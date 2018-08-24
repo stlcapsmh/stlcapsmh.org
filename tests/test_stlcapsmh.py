@@ -60,3 +60,17 @@ def test_get_about(client):
     page = stlcapsmh.PAGES[1]
     assert page['name'].encode() in response.data
     assert page['title'].encode() in response.data
+
+def test_get_apply(client):
+    """Test the rendered apply page template for declared data"""
+    response = client.get('/apply')
+
+    # Verify rendered template contains core content
+    for core_metadata in stlcapsmh.CORE.values():
+        assert core_metadata.encode() in response.data
+
+    # Verify rendered template contains page content
+    page = stlcapsmh.PAGES[2]
+    assert page['name'].encode() in response.data
+    assert page['title'].encode() in response.data
+
